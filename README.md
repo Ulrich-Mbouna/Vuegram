@@ -3,15 +3,14 @@
 ## Project description
 ```
 Dans l'optique de m'arrimer avec l'apprentissage de l'environnement de VueJs et de ses bibliothèque annexes, j'ai fait ce tuto pour 
-voir comment fonctionne une SPA avec VuejS et le systeme de Login.
+voir comment fonctionne une SPA avec VuejS et le systeme de Login.   
+```
 ### Ressources Utilisées
     Pour aboutir a ce résultat j'ai utlisé :
         -VueJS
         -Vuex
         -Vue Router
         -Firebase
-    
-```
 ## Project setup
 ```
 npm install
