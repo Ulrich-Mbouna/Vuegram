@@ -24,7 +24,12 @@ const routes = [
     meta: {
       requiresAuth: true
     }
-  }
+  },
+  {
+    path: "/suspense",
+    name: "Suspense",
+    component: () => import(/* webpackChunkName: "login"*/ "../views/suspense/SuspenseExample.vue")
+  },
 ];
 
 const router = createRouter({

@@ -80,6 +80,16 @@
             <a @click="toggleForm">Back to Log In</a>
           </div>
         </form>
+        <hr>
+      
+        <div class="">
+          <router-link to="/suspense">Go To Suspense</router-link>
+        </div>
+        <div class="">
+          <WatcherExample />
+
+        </div>
+        
       </div>
     </section>
   </div>
@@ -87,9 +97,13 @@
 
 <script>
 import PasswordReset from "../components/PasswordReset";
+import {computed, ref} from "@vue/reactivity";
+import WatcherExample from "./watcher/WatcherExample";
+
 export default {
   components: {
-    PasswordReset
+    PasswordReset,
+    WatcherExample
   },
   data: function() {
     return {
@@ -128,6 +142,15 @@ export default {
     },
     togglePasswordReset() {
       this.showPasswordReset = !this.showPasswordReset;
+    }
+  },
+  setup() {
+    let formName = ref('');
+    let formEmail = ref('');
+
+    return {
+      formName,
+      formEmail
     }
   }
 };

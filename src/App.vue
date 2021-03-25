@@ -7,6 +7,7 @@
 
 <script>
 import SiteNav from "./views/SiteNav";
+import WatcherExample from "./views/watcher/WatcherExample";
 import { mapState } from "vuex";
 export default {
   components: {
@@ -17,7 +18,6 @@ export default {
   computed: {
     ...mapState(['userProfile']),
     showNav() {
-      console.log(this.userProfile);
       return Object.keys(this.userProfile).length > 1;
     }
   }
